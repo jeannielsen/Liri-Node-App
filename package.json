@@ -1,0 +1,31 @@
+{
+  "name": "liri-solution",
+  "version": "1.0.0",
+  "description": "liri",
+  "main": "JoeNotes.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^7.0.0",
+    "inquirer": "^6.2.2",
+    "moment": "^2.24.0",
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.88.0",
+    "search": "^1.0.0",
+    "spotify": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeannielsen/Liri-Node-App.git"
+  },
+  "keywords": [],
+  "author": "Jean Nielsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeannielsen/Liri-Node-App/issues"
+  },
+  "homepage": "https://github.com/jeannielsen/Liri-Node-App#readme"
+}
