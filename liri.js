@@ -35,20 +35,13 @@ var getMovie = function (movieName) {
 function getConcerts(artist) {
   axios.get(`"https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"`)
     .then(function (response) {
-      var data = response.data;
-      var text = `${linebreak}\nUpcoming concerts for ${artist}\n${linebreak}\n`
-      console.log(text);
-      logData(text);
-      for (var i = 0; i < 5; i++) {
-        var datetime = moment(data[i].datetime).format("MMM Do YYYY");
-        var concertData = `Venue: ${data[i].venue.name}\nLocation: ${data[i].venue.city}, ${data[i].venue.region} ${data[i].venue.country}\nDate: ${datetime}\n\n`;
-        console.log(concertData);
-        logData(concertData);
-      };
-      liriAgain();
+      console.log(response.data.Search[0]);
+    
     })
+    .catch(function (error) {
+      console.log(error);
+    });
 };
-
 var getArtistNames = function (artist) {
   return artist.name;
 }
